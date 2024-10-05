@@ -1,16 +1,14 @@
-const favoriteButton = document.querySelectorAll(".star");
+const favoriteButton = document.querySelectorAll(".button");
 
-favoriteButton.forEach((star) => {
-  star.addEventListener("click", function (event) {
+favoriteButton.forEach((button) => {
+  button.addEventListener("click", function (event) {
     event.stopPropagation();
     this.classList.toggle("favorited");
 
     if (this.classList.contains("favorited")) {
-      this.textContent = "favorited";
-      this.style.backgroundColor = "orange";
+      this.textContent = "★";
     } else {
-      this.textContent = "favorite";
-      this.style.backgroundColor = "#007bff";
+      this.textContent = "☆";
     }
   });
 });

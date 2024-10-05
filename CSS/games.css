@@ -12,8 +12,13 @@ footer {
   color: #ffffff;
   text-align: center;
 }
-.star {
-  font-size: 24px;
+.button {
+  font-size: 25px;
+  height: 20px;
+  width: 20px;
+  background-color: #000a44;
+  border: none;
+  color: #ffffff;
 }
 
 header {
@@ -94,17 +99,6 @@ h3 {
 .movie-description {
   width: 250px;
   text-align: center;
-}
-
-.button {
-  background-color: #007bff;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  font-size: 1rem;
-  color: #ffffff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: none;
 }
 .title h1 {
   color: #ffffff;
