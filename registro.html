@@ -15,18 +15,265 @@
   </header>
   <nav>
     <ul>
-      <li><a href="#">Inicio</a></li>
+      <li><a href="/index.html">Inicio</a></li>
       <li><a href="juegos.html">Juegos</a></li>
-      <li><a href="registro.html">Registro de Desarrolladores </a></li>
+      <li><a href="#">Registro de Desarrolladores </a></li>
     </ul>
   </nav>
+  <style>
+    .contenido_cabeza {
+      max-width: 2000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    body {
+      margin: 0 auto;
+      font-family: "Arial Black", Gadget, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      width: 850px;
+      margin: 0 auto;
+    }
+    .boton:hover {
+      background-color: #00569c;
+    }
+    .info1 {
+      padding: 15px 30px;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    div {
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      align-content: center;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    .titulo {
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 20px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #ffffff;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+    }
+    .titulo::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background-color: #3fa3f4;
+      margin: 8px auto 0;
+    }
+    .todo {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 100px;
+    }
+    .todo::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url("tienda.jpg") no-repeat center;
+      background-size: cover;
+      filter: blur(50px);
+      z-index: -1;
+    }
+    .centro {
+      max-width: 950px;
+      display: grid;
+      width: 700px;
+      height: 600px;
+      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #0b0a57;
+      box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    }
+    .Boton {
+      background: #000320;
+      color: #ffffff;
+      font-size: 20px;
+      border: 0px groove #000000;
+      line-height: 30px;
+      padding: 5px;
+      width: 300px;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #ffffff;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      margin: 0 auto;
+    }
+    .Boton:hover {
+      background: #18619c;
+    }
+
+    .bar1 {
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar1 input {
+      border: none;
+      height: 100%;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+    .bar2 {
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar2 input {
+      border: none;
+      height: 100%;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+    .bar3 {
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar3 input {
+      border: none;
+      height: 100%;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+    .bar4 {
+      height: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .bar4 input {
+        border: none;
+      height: 40px;
+      width: 300px;
+      border-radius: 0;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-size: 15px;
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      color: #3f3f3f;
+      font-weight: normal;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      border-radius: 15px;
+      background-color: #ecececc7;
+    }
+  </style>
   <body>
-    <div class="title"><h1>REGISTRATE Y PUBLICA</h1>
-    </div>
+    <div class="todo">
+        <div class="centro">
+          <div class="titulo">
+            <h1>REGISTRATE Y PUBLICA</h1>
+          </div>
+          <br />
+          <form class="bar1">
+            <input type="text" placeholder=" Nombre y Apellido" /> <br />
+          </form>
+          <br />
+          <form class="bar2">
+            <input type="text" placeholder="Correo Electrónico" />
+          </form>
+          <br />
+          <form class="bar3">
+            <input type="text" placeholder="Nombre del juego" />
+          </form>
+          <br />
+          <form class="bar4">
+            <input type="text" placeholder="enlace del juego">
+          </form>
+          <br />
+          <button class="Boton">Send</button>
+        </div>
+      </div>
   </body>
   <footer>
-    <p><address>Movies2Wacth</address></p>
-    <small>&copy; Movies2Wacth - All rights reserved</small>
+    <p><address>GamePortal</address></p>
+    <small>&copy; GamePortal - All rights reserved</small>
   </footer>
 </html>
 

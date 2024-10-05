@@ -1,7 +1,7 @@
 const favoriteButton = document.querySelectorAll(".star");
 
-favoriteButton.forEach((button) => {
-  button.addEventListener("click", function (event) {
+favoriteButton.forEach((star) => {
+  star.addEventListener("click", function (event) {
     event.stopPropagation();
     this.classList.toggle("favorited");
 
