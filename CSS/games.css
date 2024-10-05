@@ -74,7 +74,7 @@ select {
 }
 
 .games {
-  background-color: #020096;
+  background-color: #000a44;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
@@ -115,8 +115,4 @@ h3 {
 .selector {
   padding: 10px;
   background-color: #000a44;
-}
-.gaming {
-  height: 1000px;
-  width: auto;
 }
