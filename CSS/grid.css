@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    flex-wrap: wrap;
+  }
+}
+.games {
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    flex-wrap: wrap;
+  }
+  .games {
+    width: 250px;
+    height: 100px;
+  }
+
+  div img {
+    height: 100px;
+  }
+  .modal-content {
+    font-size: 10px;
+  }
+  .cine {
+    width: 400px;
+    height: auto;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content2 p {
+    font-size: 20px;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+  nav li a {
+    font-size: 1rem;
+  }
+}
